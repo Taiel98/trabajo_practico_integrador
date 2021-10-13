@@ -1,0 +1,12 @@
+#divopacity{position:absolute;
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,0.6);
+    top:0;}
+.titulo{text-align: center;}
+h6{text-align: center;}
+input{margin-right: 10px;}
+.cosas{text-align: center;}
+.pie{background-color:#004466;}
+
+h3{font-weight: bold;}
