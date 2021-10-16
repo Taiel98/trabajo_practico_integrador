@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="estilosTI.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="javaScriptTI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  <img src="imagenes_integrador_front/codoacodo.png" alt="logo codo a codo" width="70" height="40" class="d-inline-block align-text-top">
+                  Conf Bs As
+                </a>
+                <ul class="navbar-nav mb-2 mb-lg-0 nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conviértete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Comprar tickets</a>
+                      </li>
+                  </ul>
+              </div>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-group">
+                        <div class="card border-primary">
+                          
+                          <div class="card-body">
+                            <h5 class="card-title titulo">Estudiante</h5>
+                            <p class="card-text titulo">Tiene un descuento</p>
+                            <p class="card-text titulo titular">80%</p>
+                            <p class="card-text titulo"><small class="text-muted">*presentar documentación</small></p>
+                          </div>
+                        </div>
+                        <div class="card border-info">
+                          
+                          <div class="card-body">
+                            <h5 class="card-title titulo">Trainee</h5>
+                            <p class="card-text titulo">Tiene un descuento</p>
+                            <p class="card-text titulo titular">50%</p>
+                            <p class="card-text titulo"><small class="text-muted">*presentar documentación</small></p>
+                          </div>
+                        </div>
+                        <div class="card border-warning">
+                          
+                          <div class="card-body">
+                            <h5 class="card-title titulo">Junior</h5>
+                            <p class="card-text titulo">Tiene un descuento</p>
+                            <p class="card-text titulo titular">15%</p>
+                            <p class="card-text titulo"><small class="text-muted">*presentar documentación</small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="titulo">VENTA</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="titulo titular">VALOR DE TICKET $200</h3>
+                </div>
+            </div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+                <div class="col-12">
+                  <input type="email" class="form-control"  placeholder="Correo">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" placeholder="cantidad" id="cantidad">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Categoria</label>
+                  <select class="form-select" id="categoria">
+                    <option selected>Estudiante</option>
+                    <option>Trainee</option>
+                    <option>Junior</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                    <div class="p-3 mb-2 bg-info bg-opacity-10 text-primary rounded" id="total">Total a pagar: $</div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button type="button" class="btn btn-success">Borrar</button>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="button" class="btn btn-success btn-lg" onclick="resumen()">Resumen</button>
+                </div>
+              </form>
+        </div>
+    </main>
+    <br>
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-dark pie">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Preguntas frecuentes</a>
+              <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+              <a class="nav-link active" aria-current="page" href="#">Prensa</a>
+              <a class="nav-link active" aria-current="page" href="#">Conferencias</a>
+              <a class="nav-link active" aria-current="page" href="#">Términos y condiciones</a>
+              <a class="nav-link active" aria-current="page" href="#">Privacidad</a>
+              <a class="nav-link active" aria-current="page" href="#">Estudiantes</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+</body>
+</html>
