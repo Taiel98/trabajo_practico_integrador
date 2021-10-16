@@ -27,6 +27,8 @@ function resumen() {
     var relleno = document.createTextNode(total);
     nuev.appendChild(relleno);
     document.getElementById("total").appendChild(nuev);
-
-    
+}
+function borrar(){
+    var totoal = document.getElementById("total");
+    totoal.removeChild(totoal.childNodes[1]);
 }
